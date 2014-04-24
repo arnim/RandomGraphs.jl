@@ -4,6 +4,6 @@ tests = [
 
 
 for t in tests
-    println("running $(tp) ...")
+    println("running $(t) ...")
     include("$(t).jl")
 end

@@ -1,4 +1,5 @@
 using RandomGraphs
+using Graphs
 using Base.Test
 
 # Barabási–Albert scale-free graphs
