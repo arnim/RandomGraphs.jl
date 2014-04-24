@@ -1,5 +1,11 @@
 module RandomGraphs
+	
+	using Graphs
+	
+	export
+	
+		barabasi_albert_graph
 
-# package code goes here
+		include("RandomGraphs.jl")
 
 end # module

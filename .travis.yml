@@ -13,6 +13,7 @@ before_install:
   - sudo apt-get update -qq -y
   - sudo apt-get install libpcre3-dev julia -y
 script:
-  - julia -e 'Pkg.init(); run(`ln -s $(pwd()) $(Pkg.dir("RandomGraphs"))`); Pkg.pin("RandomGraphs"); Pkg.resolve()'
+	- julia -e 'versioninfo(); Pkg.init(); Pkg.add("Distributions"); Pkg.add("Graphs")'
+  - julia -e 'run(`ln -s $(pwd()) $(Pkg.dir("RandomGraphs"))`); Pkg.pin("RandomGraphs"); Pkg.resolve()'
   - julia -e 'using RandomGraphs; @assert isdefined(:RandomGraphs); @assert typeof(RandomGraphs) === Module'
   - julia test/runtests.jl
