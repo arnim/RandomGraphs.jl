@@ -3,7 +3,7 @@ tests = [
     "barabasi_albert" ]
 
 
-for t in tests
-    println("running $(t) ...")
-    include("$(t).jl")
+for test in tests
+    println("running $(test) ...")
+    include("$(test).jl")
 end
