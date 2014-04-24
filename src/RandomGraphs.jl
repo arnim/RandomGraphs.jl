@@ -10,8 +10,8 @@ module RandomGraphs
 		niche_model_graph
 
 		include("barabasi_albert.jl")
-		include("erdos_renyi.jd")
-		include("watts_strogatz.jd")
-		include("niche_model.jd")
+		include("erdos_renyi.jl")
+		include("watts_strogatz.jl")
+		include("niche_model.jl")
 
 end # module
