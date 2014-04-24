@@ -6,6 +6,6 @@ module RandomGraphs
 	
 		barabasi_albert_graph
 
-		include("RandomGraphs.jl")
+		include("barabasi_albert.jl")
 
 end # module
