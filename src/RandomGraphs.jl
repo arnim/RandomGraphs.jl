@@ -1,6 +1,7 @@
 module RandomGraphs
 	
 	using Graphs
+   using Distributions
 	
 	export
 	
@@ -9,9 +10,9 @@ module RandomGraphs
 		watts_strogatz_graph
 		niche_model_graph
 
+
 		include("barabasi_albert.jl")
 		include("erdos_renyi.jl")
 		include("watts_strogatz.jl")
 		include("niche_model.jl")
-
 end # module

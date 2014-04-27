@@ -1,4 +1,3 @@
-
 # Generate a graph using Williams & Martinez "Niche" model of food web
 # See paper: http://www.nature.com/nature/journal/v404/n6774/abs/404180a0.html
 # The niche model generates realistic food webs / trophic networks
