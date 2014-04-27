@@ -9,7 +9,7 @@
 #   S: the number of species
 #   C: the expected connectance (/density)
 
-function niche_model_graph{T<:Real, GT<:AbstractGraph}(g::GT, S::Integer, C::T)
+function niche_model_graph{GT<:AbstractGraph}(g::GT, S::Integer, C::Real)
    n = Array(T, S)
    r = Array(T, S)
    c = Array(T, S)
