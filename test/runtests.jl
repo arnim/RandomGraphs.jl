@@ -1,6 +1,6 @@
-
 tests = [
-    "barabasi_albert" ]
+    "barabasi_albert",
+    "erdos_renyi"]
 
 
 for test in tests
