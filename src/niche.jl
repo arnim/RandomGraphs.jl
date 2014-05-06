@@ -10,6 +10,8 @@
 #   C: the expected connectance (/density)
 
 function niche_model_graph{GT<:AbstractGraph}(g::GT, S::Integer, C::Real)
+   @assert(S>1, "The number of nodes must be higher than 1, currently $S")
+   @assert(C > 0 && C <= 1, "Connectance must be in ]0;1], currently $C")
    n = Array(T, S)
    r = Array(T, S)
    c = Array(T, S)

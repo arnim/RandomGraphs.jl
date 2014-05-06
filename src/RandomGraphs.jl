@@ -9,5 +9,5 @@ module RandomGraphs
    include("barabasi_albert.jl")
    include("erdos_renyi.jl")
    include("watts_strogatz.jl")
-   include("niche_model.jl")
+   include("niche.jl")
 end
