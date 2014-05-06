@@ -18,5 +18,6 @@ end
 
 let d_erm = erdos_renyi_graph(n, m, is_directed=true)
 	@test num_vertices(d_erm) == n
+   @printf "Number of edges %d" num_edges(d_ern)
 	@test num_edges(d_erm) == m
 end
