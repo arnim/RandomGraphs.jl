@@ -40,9 +40,7 @@ function erdos_renyi_graph{GT<:AbstractGraph}(g::GT, n::Integer, m::Integer; has
       # TODO This should be done when calculating the maximal numbe of edges
       m = length(nodepairs)
    end
-   @printf "nodepairs has %d elements\n" length(nodepairs)
    nodepairs = nodepairs[1:m]
-   @printf "nodepairs has %d elements\n" length(nodepairs)
    for k in 1:m
       add_edge!(g, nodepairs[k][1], nodepairs[k][2])
    end
