@@ -1,11 +1,15 @@
 module RandomGraphs
-	
-	using Graphs
-	
-	export
-	
-		barabasi_albert_graph
+   using Graphs
+   using Distributions
 
-		include("barabasi_albert.jl")
+   export
+      barabasi_albert_graph,
+      erdos_renyi_graph,
+      watts_strogatz_graph,
+      niche_model_graph
 
-end # module
+   include("barabasi_albert.jl")
+   include("erdos_renyi.jl")
+   include("watts_strogatz.jl")
+   include("niche.jl")
+end

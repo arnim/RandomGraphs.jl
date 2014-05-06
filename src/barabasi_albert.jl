@@ -1,4 +1,3 @@
-
 # Generate a 'scale-free' random graph based on the Barabási–Albert (BA) model.
 # The resulting graph has n vertices,
 # Number of edges to attach from a new node to existing nodes: m.
