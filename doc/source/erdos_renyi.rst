@@ -8,8 +8,8 @@ probability, independently of the other edges.
 
     Add edges between vertices 1:n of graph ``g`` randomly. The type of ``m``
     determines whether the G(n,p) model (edges are added with probability
-    ``m`` if ``m`` is ``Real``), or the G(n,M) model (exactly ``m`` edges
-    are added if ``m`` is an ``Integer``) is used.
+    ``m`` if ``m`` is a ``Number``), or the G(n,M) model (exactly ``m``
+    edges are added if ``m`` is an ``Integer``) is used.
 
     :param g:           the input graph
     :param n:           the number of vertices between which to add edges

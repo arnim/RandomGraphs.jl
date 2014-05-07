@@ -1,5 +1,5 @@
 # Generate a random graph with n vertices where each edge is included with probability m.
-function erdos_renyi_graph{GT<:AbstractGraph}(g::GT, n::Integer, m::Real; has_self_loops=false)
+function erdos_renyi_graph{GT<:AbstractGraph}(g::GT, n::Integer, m::Number; has_self_loops=false)
    @assert(m > 0 && m <= 1, "m must be in ]0;1], currently $m")
    @assert(n > 1, "n must be larger than 1, currently $n")
    for i=1:n
@@ -14,7 +14,7 @@ function erdos_renyi_graph{GT<:AbstractGraph}(g::GT, n::Integer, m::Real; has_se
 end
 
 # Convenience function for G(n,p)
-function erdos_renyi_graph(n::Integer, m::Real; is_directed=true, has_self_loops=false)
+function erdos_renyi_graph(n::Integer, m::Number; is_directed=true, has_self_loops=false)
    @printf "Erdos-Renyi G(n,p) model with %d nodes and p=%f" n m
    g = simple_inclist(n, is_directed=is_directed)
    erdos_renyi_graph(g, n, m, has_self_loops=has_self_loops)
